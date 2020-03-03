@@ -17,7 +17,7 @@ public class JerseyTestApplication {
 	@Bean
 	public ServletRegistrationBean jerseyServlet() {
 
-		ServletRegistrationBean registration = new ServletRegistrationBean(new ServletContainer(), "/api/*");
+		ServletRegistrationBean registration = new ServletRegistrationBean(new ServletContainer(), "/rest/*");
 
 		// our rest resources will be available in the path /rest/*
 
